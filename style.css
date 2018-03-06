@@ -2,7 +2,8 @@
     width: 100px; 
     height: 100px; 
     position: absolute; 
-    background: gray; 
+    background: url("https://i.pinimg.com/originals/19/62/ab/1962ab750a47b74c94677d3f6c08ebec.jpg");
+    background-size: cover;
     left: 200px; 
     top: 200px;
 }
