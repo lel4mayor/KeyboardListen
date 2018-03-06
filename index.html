@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+<script>
+
+var boxtop=200;
+var boxleft=200;
+
+'use strict';
+
+document.addEventListener('keydown', (event) => {
+  const keyName = event.key;
+  //alert('keydown event\n\n' + 'key: ' + keyName);
+  if(keyName == 'ArrowDown') {
+      boxtop += 10;
+      document.getElementById("box").style.top = boxtop + "px";
+  } else if(keyName === 'ArrowUp') {
+      boxtop -= 10;
+      document.getElementById("box").style.top = boxtop + "px";
+  } else if(keyName === 'ArrowLeft') {
+      boxleft -= 10;
+      document.getElementById("box").style.left = boxleft + "px";
+  } else if(keyName === 'ArrowRight') {
+      boxleft += 10;
+      document.getElementById("box").style.left = boxleft + "px";
+  }
+
+
+
+});
+
+</script>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>
